@@ -11,13 +11,13 @@ export default function ContactPage() {
 
       <div className="flex flex-wrap justify-center gap-4">
         <a
-          href="mailto:thiagoviegas06@gmail.com"
+          href="mailto:thiagojoseviegas@gmail.com"
           className="min-w-[180px] bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow text-center"
         >
           📩 Email Me
         </a>
         <a
-          href="https://www.linkedin.com/in/thiagoviegasdrexel/"
+          href="https://www.linkedin.com/in/thiagoviegasnyu/"
           target="_blank"
           rel="noopener noreferrer"
           className="min-w-[180px] bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition shadow text-center"

@@ -34,15 +34,6 @@ export default function HomePage() {
     },
   }
 
-  const floatingVariants = {
-    animate: {
-      y: [-10, 10, -10],
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-      },
-    },
-  }
 
   return (
     <main className="min-h-screen relative">
@@ -60,7 +51,7 @@ export default function HomePage() {
             variants={itemVariants}
             className="text-6xl md:text-7xl font-extrabold tracking-tight mb-6"
           >
-            <span className="text-gray-900 dark:text-white">Hi, I'm </span>
+            <span className="text-gray-900 dark:text-white">Hi, I&apos;m </span>
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
               Thiago
             </span>
@@ -79,8 +70,8 @@ export default function HomePage() {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            I'm a <span className="font-semibold text-blue-600 dark:text-blue-400">Computer Science graduate</span> from Drexel University, 
-            currently pursuing my <span className="font-semibold text-purple-600 dark:text-purple-400">Master's at NYU</span> with a focus on 
+            I&apos;m a <span className="font-semibold text-blue-600 dark:text-blue-400">Computer Science graduate</span> from Drexel University, 
+            currently pursuing my <span className="font-semibold text-purple-600 dark:text-purple-400">Master&apos;s at NYU</span> with a focus on 
             <span className="font-semibold text-indigo-600 dark:text-indigo-400"> AI & Machine Learning</span>. 
             I love building tools that help people be more efficient and productive in their daily lives. 
           </motion.p>
@@ -142,7 +133,7 @@ export default function HomePage() {
               whileTap={{ scale: 0.95 }}
             >
               <span className="flex items-center gap-2">
-                Let's Connect
+                Let&apos;s Connect
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </motion.a>

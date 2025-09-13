@@ -150,7 +150,7 @@ export default function PortfolioPage() {
 
       {/* Project Sections */}
       <div className="space-y-20">
-        {projectSections.map((section, sectionIndex) => {
+        {projectSections.map((section) => {
           const IconComponent = section.icon
           return (
             <motion.section
@@ -215,7 +215,7 @@ export default function PortfolioPage() {
           Interested in collaborating?
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mb-6">
-          I'm always excited to work on new projects and explore innovative technologies.
+          I&apos;m always excited to work on new projects and explore innovative technologies.
         </p>
         <motion.a
           href="/contact"

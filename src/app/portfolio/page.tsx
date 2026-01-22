@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import ProjectCard from '@/components/ProjectCard'
-import { Globe, Gamepad2, Brain, Box } from 'lucide-react'
+import { Globe, Gamepad2, Brain, Box, Eye, Database } from 'lucide-react'
 
 const projectSections = [
   {
@@ -28,6 +28,62 @@ const projectSections = [
       },
       
       // Add more web app projects here
+    ]
+  },
+  {
+    id: 'computer-vision',
+    title: 'Computer Vision',
+    icon: Eye,
+    description: 'Image processing, object detection, classification, deep learning, and computer vision projects',
+    color: 'from-indigo-500 to-violet-500',
+    projects: [
+      // Add computer vision projects here
+      {
+        title: "Baseball pitch tracking and prediction",
+        description: "Tracks baseball pitches and predicts wether its a strike or ball and the zone it lands in.",
+        image: '/baseball.jpg',
+        tags: ['Computer Vision', 'Python', 'OpenCV', 'TorchVision', 'Deep Learning'],
+        link: 'https://github.com/thiagoviegas06/CS432-final-proj', //update link
+      },
+      {
+        title: "Cell Segmentation and Detection",
+        description: "Segments and detects cells in a microscopy image.",
+        image: '/cells.jpg',
+        tags: ['Computer Vision', 'Python', 'OpenCV', 'TorchVision', 'RESNET'],
+        link: 'https://github.com/thiagoviegas06/cell_identification', ///update link
+      },
+      {
+        title: "Constelation Detection and Classification",
+        description: "Detects start patches that compose a constellation and classifies the constellation it belongs to, this project uses traditional computer vision techniques.",
+        image: '/constelation.webp',
+        tags: ['Computer Vision', 'Python', 'OpenCV', 'Edge Detection', 'Hough Transform'],
+        link: 'https://github.com/thiagoviegas06/computerVision-Project', ///update link
+      },
+      {
+        title: "Geoguesser Predictor",
+        description: "Predicts the state in the United States of a given image using CLIP and a fine-tuned model trained over thousands of images.",
+        image: '/us-map.gif',
+        tags: ['Computer Vision', 'Python', 'OpenCV', 'TorchVision', "CLIP"],
+        link: 'https://github.com/thiagoviegas06/GeoGuesser', //update link
+      }
+    ]
+  },
+  {
+    id: 'big-data',
+    title: 'Big Data',
+    icon: Database,
+    description: 'Distributed computing, data processing, and large-scale analytics projects',
+    color: 'from-teal-500 to-cyan-500',
+    projects: [
+      {
+        title: "Semantic Value Joins",
+        description: "Created a RL model that learns the approptiate method to do value joins over given datasets.",
+        image: '/big-data.jpg',
+        tags: ['Big Data', 'Reinforcement Learning', 'Semantic Value Joins', 'Torch'],
+        link: 'https://github.com/cucumberpeel/thematchmakers', //update link
+        paper: '/Big_Data_Class_Final_Project__MatchMakers%20(1).pdf',
+      },
+      // Add big data projects here
     ]
   },
   {

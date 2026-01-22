@@ -32,7 +32,13 @@ const timelineItems = [
     description:
       'Currently pursuing a Master of Science in Computer Science at New York University with a focus on Artificial Intelligence and Machine Learning.',
   },
-  
+  {
+    date: '2026 – Present',
+    title: 'Research Assistant',
+    subtitle: 'NYU Neuroinformatics Lab, Professor Erdem Varol',
+    description:
+      'Researching neuroinformatics applications.',
+  },
 ]
 
 const fadeUp = {
@@ -44,52 +50,103 @@ const fadeUp = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen px-6 py-16 max-w-3xl mx-auto space-y-12">
-      {/* Section: Intro */}
+      {/* Section: About */}
       <motion.section
         {...fadeUp}
         viewport={{ once: true }}
         className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
       >
-        <h1 className="text-4xl font-bold mb-4">About Me</h1>
+        <h1 className="text-4xl font-bold mb-6">About Me</h1>
+        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          Recently graduated from <span className="font-bold text-blue-600 dark:text-blue-400">Drexel University</span> with a <span className="font-bold text-blue-600 dark:text-blue-400">B.S. in Computer Science</span> and currently pursuing a <span className="font-bold text-blue-600 dark:text-blue-400">M.S. in Computer Science at New York University</span> with a focus on <span className="font-bold text-blue-600 dark:text-blue-400">Artificial Intelligence and Machine Learning</span>.
+        </p>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-         Recently graduated from <span className="font-bold text-blue-600 dark:text-blue-400">Drexel University</span> with a <span className="font-bold text-blue-600 dark:text-blue-400">B.S. in Computer Science</span> and a <span className="font-bold text-blue-600 dark:text-blue-400">Mathematics minor</span>. Currently pursuing a <span className="font-bold text-blue-600 dark:text-blue-400">M.S. in Computer Science at New York University</span> with a focus on <span className="font-bold text-blue-600 dark:text-blue-400">Artificial Intelligence and Machine Learning</span>.
-        </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-          During my time at Drexel, I completed <span className="font-bold text-blue-600 dark:text-blue-400">two co-ops at Bristol Myers Squibb</span> as a <span className="font-bold text-blue-600 dark:text-blue-400">Cybersecurity Analyst</span>, and I also worked as a <span className="font-bold text-blue-600 dark:text-blue-400">Teaching Assistant</span> for Computer Architecture and Systems courses.
-        </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-          Currently I am taking courses in <span className="font-bold text-blue-600 dark:text-blue-400">Machine Learning</span>, <span className="font-bold text-blue-600 dark:text-blue-400">Computer Vision</span> and <span className="font-bold text-blue-600 dark:text-blue-400">Big Data</span>. I plan to use my masters to strengthen my skills in areas related to <span className="font-bold text-blue-600 dark:text-blue-400">Artificial Intelligence and its applications</span>.
-        </p>
-        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-          I am currently looking for <span className="font-bold text-blue-600 dark:text-blue-400">internships in the summer of 2026</span>. I have a strong interest in <span className="font-bold text-blue-600 dark:text-blue-400">software development</span> and <span className="font-bold text-blue-600 dark:text-blue-400">artificial intelligence</span>. My goal is to use my knowledge in Computer Science to develop tools that help people be more efficient and productive in their daily lives. If you have any questions or would like to connect, please feel free to reach out.
+          My goal is to use my knowledge in Computer Science to develop tools that help people be more efficient and productive in their daily lives.
         </p>
       </motion.section>
 
-      {/* Section: Academic */}
+      {/* Section: Education */}
       <motion.section
         {...fadeUp}
         viewport={{ once: true }}
         className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
       >
-        <h2 className="text-2xl font-semibold mb-3">Academic Summary</h2>
+        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+          <li><span className="font-bold text-blue-600 dark:text-blue-400">M.S. Computer Science</span> — New York University (2025–2027, In Progress)</li>
+          <li><span className="font-bold text-blue-600 dark:text-blue-400">B.S. Computer Science</span> — Drexel University (2020–2025), Magna Cum Laude (GPA 3.82)</li>
+          <li>Mathematics minor; Concentrations in Computer Systems & Graphics</li>
+        </ul>
+      </motion.section>
+
+      {/* Section: Experience */}
+      <motion.section
+        {...fadeUp}
+        viewport={{ once: true }}
+        className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+          <li><span className="font-bold text-blue-600 dark:text-blue-400">Cybersecurity Analyst Co-Op</span> — Bristol Myers Squibb (2023 & 2024)</li>
+          <li><span className="font-bold text-blue-600 dark:text-blue-400">Teaching Assistant</span> — Drexel University (2023–2025), Computer Architecture & Systems</li>
+        </ul>
+      </motion.section>
+
+      {/* Section: Research */}
+      <motion.section
+        {...fadeUp}
+        viewport={{ once: true }}
+        className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Research</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-3">
+          Starting as a <span className="font-bold text-blue-600 dark:text-blue-400">Research Assistant</span> in the neuroinformatics lab under <span className="font-bold text-blue-600 dark:text-blue-400">Professor Erdem Varol</span>.
+        </p>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+          <li>Focus area: <span className="font-bold text-blue-600 dark:text-blue-400">Neuroinformatics</span></li>
+        </ul>
+      </motion.section>
+
+      {/* Section: Coursework */}
+      <motion.section
+        {...fadeUp}
+        viewport={{ once: true }}
+        className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Coursework</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Undergraduate</h3>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Completed</h3>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-              <li><strong>Drexel University</strong> — B.S. in Computer Science</li>
-              <li>Minor in Mathematics</li>
-              <li>Concentrations: Computer Systems, Computer Graphics</li>
-              <li><strong>GPA:</strong> 3.82 (Magna Cum Laude)</li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Machine Learning</span></li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Computer Vision</span></li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Big Data</span></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Graduate</h3>
+            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">Upcoming</h3>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-              <li><strong>New York University</strong> — M.S. in Computer Science (In Progress)</li>
-              <li>Focus: Artificial Intelligence and Machine Learning</li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Neuroinformatics</span></li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Data Structures</span></li>
+              <li><span className="font-bold text-blue-600 dark:text-blue-400">Information Visualization</span></li>
             </ul>
           </div>
         </div>
+      </motion.section>
+
+      {/* Section: Internship Search / Interests */}
+      <motion.section
+        {...fadeUp}
+        viewport={{ once: true }}
+        className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Interests & Opportunities</h2>
+        <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          I am currently seeking <span className="font-bold text-blue-600 dark:text-blue-400">Summer 2026 internships</span>, with a strong interest in <span className="font-bold text-blue-600 dark:text-blue-400">machine learning</span> and <span className="font-bold text-blue-600 dark:text-blue-400">computer vision</span>, as well as <span className="font-bold text-blue-600 dark:text-blue-400">software development</span>. I am particularly interested in roles where I can apply <span className="font-bold text-blue-600 dark:text-blue-400">ML techniques</span> to real-world systems and data-driven products.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          If you have any questions or would like to connect, please feel free to <a href="/contact" className="font-bold text-blue-600 dark:text-blue-400 hover:underline">reach out</a>.
+        </p>
       </motion.section>
 
       {/* Section: Timeline */}
@@ -108,11 +165,9 @@ export default function AboutPage() {
         viewport={{ once: true }}
         className="bg-white dark:bg-[#1b1b1b] shadow-lg border border-gray-200 dark:border-[#333] rounded-xl p-6"
       >
-        <h2 className="text-2xl font-semibold mb-4">Relevant Coursework</h2>
+        <h2 className="text-2xl font-semibold mb-4">Undergraduate Coursework</h2>
         <div className="space-y-6">
-          {/* Undergraduate Coursework */}
           <div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-3">Undergraduate (Drexel University)</h3>
             <div className="flex flex-wrap gap-2 text-sm text-gray-800 dark:text-gray-200">
               {[
                 'Data Structures & Algorithms I',
@@ -141,24 +196,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Master's Coursework */}
-          <div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-3">Graduate (New York University)</h3>
-            <div className="flex flex-wrap gap-2 text-sm text-gray-800 dark:text-gray-200">
-              {[
-                'Machine Learning',
-                'Computer Vision',
-                'Big Data',
-              ].map((course) => (
-                <span
-                  key={course}
-                  className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full border border-blue-200 dark:border-blue-700"
-                >
-                  {course}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </motion.section>
 

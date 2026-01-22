@@ -1,14 +1,15 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Cpu, Gamepad2, Brain, Shield, Zap, ArrowRight } from 'lucide-react'
+import { Code, Cpu, Gamepad2, Brain, Eye, BrainCircuit, Zap, ArrowRight } from 'lucide-react'
 
 export default function HomePage() {
   const techIcons = [
     { icon: Code, label: 'Development' },
     { icon: Brain, label: 'AI/ML' },
     { icon: Cpu, label: 'Systems' },
-    { icon: Shield, label: 'Security' },
+    { icon: Eye, label: 'Vision' },
+    { icon: BrainCircuit, label: 'Neuroinformatics' },
     { icon: Gamepad2, label: 'Gaming' },
   ]
 
@@ -62,7 +63,7 @@ export default function HomePage() {
             variants={itemVariants}
             className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-4"
           >
-            Computer Scientist & AI Enthusiast
+            Computer Scientist & Neuroinformatics Researcher
           </motion.p>
 
           {/* Description */}
@@ -70,10 +71,11 @@ export default function HomePage() {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            I&apos;m a <span className="font-semibold text-blue-600 dark:text-blue-400">Computer Science graduate</span> from Drexel University, 
-            currently pursuing my <span className="font-semibold text-purple-600 dark:text-purple-400">Master&apos;s at NYU</span> with a focus on 
-            <span className="font-semibold text-indigo-600 dark:text-indigo-400"> AI & Machine Learning</span>. 
-            I love building tools that help people be more efficient and productive in their daily lives. 
+            I&apos;m a <span className="font-semibold text-blue-600 dark:text-blue-400">Computer Science graduate</span> from Drexel University,
+  currently pursuing my <span className="font-semibold text-purple-600 dark:text-purple-400">Master&apos;s at NYU</span> with a focus on
+  <span className="font-semibold text-indigo-600 dark:text-indigo-400"> Machine Learning & Computer Vision</span>.
+  I work on applied ML systems—from data pipelines to model training and evaluation—and I&apos;m actively seeking
+  roles where I can build impactful, real-world AI solutions.
           </motion.p>
 
           {/* Areas of Interest Heading */}
@@ -87,7 +89,7 @@ export default function HomePage() {
           {/* Tech Icons */}
           <motion.div 
             variants={itemVariants}
-            className="flex flex-wrap justify-center gap-6 mb-12"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mb-12 justify-items-center max-w-5xl mx-auto"
           >
             {techIcons.map(({ icon: Icon, label }, index) => (
               <motion.div

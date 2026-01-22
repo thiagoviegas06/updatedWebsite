@@ -50,7 +50,7 @@ export default function Header() {
                 Thiago Viegas
               </span>
               <div className="text-xs text-gray-500 dark:text-gray-400 -mt-1">
-                Computer Scientist & AI Enthusiast
+                Neuroinformatics Researcher
               </div>
             </div>
           </Link>

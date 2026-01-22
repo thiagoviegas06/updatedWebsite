@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, FileText } from 'lucide-react'
 
 type Project = {
   title: string
@@ -9,9 +9,10 @@ type Project = {
   image: string
   tags: string[]
   link?: string
+  paper?: string
 }
 
-export default function ProjectCard({ title, description, image, tags, link }: Project) {
+export default function ProjectCard({ title, description, image, tags, link, paper }: Project) {
   return (
     <motion.div 
       className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
@@ -45,18 +46,33 @@ export default function ProjectCard({ title, description, image, tags, link }: P
           ))}
         </div>
 
-        {link && (
-          <motion.a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-            whileHover={{ x: 5 }}
-          >
-            View Project
-            <ExternalLink className="w-4 h-4" />
-          </motion.a>
-        )}
+        <div className="flex flex-wrap gap-4">
+          {link && (
+            <motion.a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+              whileHover={{ x: 5 }}
+            >
+              View Project
+              <ExternalLink className="w-4 h-4" />
+            </motion.a>
+          )}
+          {paper && (
+            <motion.a
+              href={paper}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-flex items-center gap-2 text-sm font-semibold text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 transition-colors"
+              whileHover={{ x: 5 }}
+            >
+              Download Paper
+              <FileText className="w-4 h-4" />
+            </motion.a>
+          )}
+        </div>
       </div>
     </motion.div>
   )
